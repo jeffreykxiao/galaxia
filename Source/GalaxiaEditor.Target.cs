@@ -7,7 +7,10 @@ public class GalaxiaEditorTarget : TargetRules
 {
 	public GalaxiaEditorTarget(TargetInfo Target) : base(Target)
 	{
-		Type = TargetType.Editor;
+
+        DefaultBuildSettings = BuildSettingsVersion.V2;
+
+        Type = TargetType.Editor;
 
 		ExtraModuleNames.AddRange( new string[] { "Galaxia" } );
 	}
